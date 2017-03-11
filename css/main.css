@@ -1,1 +1,45 @@
 /* GREATNESS WILL BE CODED HERE!!! */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+* {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+
+.home {
+    margin: 200px auto;
+    padding: 0;
+}
+
+.home a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 48px;
+    cursor: pointer;
+    border: 10px dotted #333333;
+    text-align: center;
+    box-shadow: 8px 8px 10px #ececec;
+    text-decoration: none;
+    color: #333333;
+    font-size: 28px;
+}
+
+a:hover {
+    border: 10px dotted #f65ea5;
+    font-weight: 900;
+}
+
