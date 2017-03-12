@@ -2,13 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
-* {
+body {
     font-family: Roboto, sans-serif;
     font-size: 16px;
 }
 
 header {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
@@ -19,27 +21,210 @@ h1 {
 }
 
 .home {
-    margin: 200px auto;
+    margin: 160px auto;
+    width: 74%;
     padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.home-item {
+    margin: auto;
+    max-width: 160px;
+    min-width: 160px;
+    padding: 30% auto;
 }
 
 .home a {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
     border-radius: 50%;
-    margin: 48px;
     cursor: pointer;
-    border: 10px dotted #333333;
+    border: 6px dotted #333333;
     text-align: center;
     box-shadow: 8px 8px 10px #ececec;
     text-decoration: none;
+    font-size: 1.8em;
     color: #333333;
-    font-size: 28px;
 }
 
 a:hover {
-    border: 10px dotted #f65ea5;
-    font-weight: 900;
+    border: 6px dotted #f65ea5;
+    font-weight: 500;
 }
 
+.feather-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+}
+
+.feather {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: 2s;
+}
+
+.feather-one {
+    transform: translate(-50%, -50%) rotate(23deg);
+    animation: f1 1.8s;
+}
+
+@keyframes f1 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(23deg);
+    }
+}
+
+
+.feather-two {
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: f2 1.8s;
+}
+
+@keyframes f2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+
+.feather-three {
+    transform: translate(-50%, -50%) rotate(68deg);
+    animation: f3 1.8s;
+}
+
+@keyframes f3 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(68deg);
+    }
+}
+
+.feather-four {
+    transform: translate(-50%, -50%) rotate(90deg);
+    animation: f4 1.8s;
+}
+
+@keyframes f4 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+}
+
+.feather-five {
+    transform: translate(-50%, -50%) rotate(113deg);
+    animation: f5 1.8s;
+}
+
+@keyframes f5 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(113deg);
+    }
+}
+
+.feather-six {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.feather-seven {
+    transform: translate(-50%, -50%) rotate(-23deg);
+    animation: f7 1.8s;
+}
+
+@keyframes f7 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-23deg);
+    }
+}
+
+.feather-eight {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    animation: f8 1.8s;
+}
+
+@keyframes f8 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+.feather-nine {
+    transform: translate(-50%, -50%) rotate(-68deg);
+    animation: f9 1.8s;
+}
+
+@keyframes f9 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-68deg);
+    }
+}
+
+.feather-ten {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    animation: f10 1.8s;
+}
+
+@keyframes f10 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-90deg);
+    }
+}
+
+.feather-eleven {
+    transform: translate(-50%, -50%) rotate(-113deg);
+    animation: f11 1.8s;
+}
+
+@keyframes f11 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-113deg);
+    }
+}
