@@ -1,6 +1,7 @@
 /* GREATNESS WILL BE CODED HERE!!! */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
     font-family: Roboto, sans-serif;
@@ -9,15 +10,14 @@ body {
 
 header {
     text-align: center;
-    position: relative;
-    z-index: 1;
 }
 
 h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 2.8em;
+    font-size: 2em;
     font-weight: 300;
+    margin: 0;
 }
 
 .home {
@@ -39,18 +39,26 @@ h1 {
     display: inline-block;
     width: 160px;
     height: 160px;
-    line-height: 160px;
     border-radius: 50%;
     cursor: pointer;
     border: 6px dotted #333333;
     text-align: center;
     box-shadow: 8px 8px 10px #ececec;
     text-decoration: none;
-    font-size: 1.8em;
     color: #333333;
+    padding: auto 0;
+    line-height: 160px;
 }
 
-a:hover {
+.home div {
+    font-size: 1.8em;
+}
+
+.home .special {
+    font-size: 1em;
+}
+
+.home a:hover {
     border: 6px dotted #f65ea5;
     font-weight: 500;
 }
@@ -62,6 +70,13 @@ a:hover {
     right: 0;
     bottom: 0;
     background: #ffffff;
+    text-align: center;
+    transition: 2s;
+}
+
+.feathers-active.feather-animation {
+    background: rgba(255, 255, 255, 0);
+    pointer-events: none;
 }
 
 .feather {
@@ -73,9 +88,48 @@ a:hover {
     transition: 2s;
 }
 
+.welcome-button {
+    text-decoration: none;
+    color: #333333;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .6s;
+}
+
+.feathers-active .welcome-button {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .6s, opacity .6s;
+}
+
+.welcome-button:before {
+    font-family: 'FontAwesome';
+    content: '\f101';
+    color: #f65ea5;
+    font-size: 1.2em;
+}
+
+.welcome-button:after {
+    font-family: 'FontAwesome';
+    content: '\f100';
+    color: #f65ea5;
+    font-size: 1.2em;
+}
+
 .feather-one {
     transform: translate(-50%, -50%) rotate(23deg);
     animation: f1 1.8s;
+    transition: 2s;
+}
+
+.feathers-active .feather-one {
+    transform: translate(822px, -100px) rotate(-90deg);
 }
 
 @keyframes f1 {
@@ -92,6 +146,11 @@ a:hover {
 .feather-two {
     transform: translate(-50%, -50%) rotate(45deg);
     animation: f2 1.8s;
+    transition: 2s;
+}
+
+.feathers-active .feather-two {
+    transform: translate(874px, -200px) rotate(-90deg);
 }
 
 @keyframes f2 {
@@ -104,10 +163,14 @@ a:hover {
     }
 }
 
-
 .feather-three {
     transform: translate(-50%, -50%) rotate(68deg);
     animation: f3 1.8s;
+    transition: 2s;
+}
+
+.feathers-active .feather-three {
+    transform: translate(822px, -300px) rotate(-90deg);
 }
 
 @keyframes f3 {
@@ -123,6 +186,11 @@ a:hover {
 .feather-four {
     transform: translate(-50%, -50%) rotate(90deg);
     animation: f4 1.8s;
+    transition: 2s;
+}
+
+.feathers-active .feather-four {
+    transform: translate(874px, -400px) rotate(-90deg);
 }
 
 @keyframes f4 {
@@ -138,6 +206,11 @@ a:hover {
 .feather-five {
     transform: translate(-50%, -50%) rotate(113deg);
     animation: f5 1.8s;
+    transition: 2s;
+}
+
+.feathers-active .feather-five {
+    transform: translate(822px, -500px) rotate(-90deg)
 }
 
 @keyframes f5 {
@@ -152,11 +225,25 @@ a:hover {
 
 .feather-six {
     transform: translate(-50%, -50%) rotate(0deg);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .8s;
+}
+
+.feathers-active .feather-six {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .8s, opacity .8s;
 }
 
 .feather-seven {
     transform: translate(-50%, -50%) rotate(-23deg);
     animation: f7 1.8s;
+    transition: 2s;
+}
+
+.feathers-active .feather-seven {
+    transform: translate(-902px, -100px) rotate(90deg);
 }
 
 @keyframes f7 {
@@ -172,6 +259,11 @@ a:hover {
 .feather-eight {
     transform: translate(-50%, -50%) rotate(-45deg);
     animation: f8 1.8s;
+    transition: 2s;
+}
+
+.feathers-active .feather-eight {
+    transform: translate(-954px, -200px) rotate(90deg);
 }
 
 @keyframes f8 {
@@ -189,6 +281,10 @@ a:hover {
     animation: f9 1.8s;
 }
 
+.feathers-active .feather-nine {
+    transform: translate(-902px, -300px) rotate(90deg);
+}
+
 @keyframes f9 {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -199,9 +295,15 @@ a:hover {
     }
 }
 
+
+
 .feather-ten {
     transform: translate(-50%, -50%) rotate(-90deg);
     animation: f10 1.8s;
+}
+
+.feathers-active .feather-ten {
+    transform: translate(-954px, -400px) rotate(90deg);
 }
 
 @keyframes f10 {
@@ -219,6 +321,10 @@ a:hover {
     animation: f11 1.8s;
 }
 
+.feathers-active .feather-eleven {
+    transform: translate(-902px, -500px) rotate(90deg);
+}
+
 @keyframes f11 {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -228,3 +334,4 @@ a:hover {
         transform: translate(-50%, -50%) rotate(-113deg);
     }
 }
+
