@@ -14,8 +14,8 @@ header {
 
 h1 {
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 2em;
+    letter-spacing: 3px;
+    font-size: 1.8em;
     font-weight: 300;
     margin: 0;
 }
@@ -25,42 +25,61 @@ h1 {
     width: 74%;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
 }
 
 .home-item {
-    margin: auto;
+    margin: 10px auto;
     max-width: 160px;
     min-width: 160px;
     padding: 30% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .home a {
-    display: inline-block;
     width: 160px;
     height: 160px;
     border-radius: 50%;
     cursor: pointer;
-    border: 6px dotted #333333;
+    border: 1px solid #333333;
     text-align: center;
     box-shadow: 8px 8px 10px #ececec;
     text-decoration: none;
     color: #333333;
-    padding: auto 0;
-    line-height: 160px;
 }
 
 .home div {
-    font-size: 1.8em;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.home .special-icon:before {
+    font-family: 'FontAwesome';
+    content: '\f101';
+    color: #f65ea5;
+    font-size: 1.2em;
+}
+
+.home .special-icon:after {
+    font-family: 'FontAwesome';
+    content: '\f100';
+    color: #f65ea5;
+    font-size: 1.2em;
 }
 
 .home .special {
     font-size: 1em;
+    color: #f65ea5;
+    font-weight: 500;
 }
 
 .home a:hover {
-    border: 6px dotted #f65ea5;
-    font-weight: 500;
+    border: 1px solid #f65ea5;
 }
 
 .feather-animation {
@@ -295,8 +314,6 @@ h1 {
     }
 }
 
-
-
 .feather-ten {
     transform: translate(-50%, -50%) rotate(-90deg);
     animation: f10 1.8s;
@@ -333,5 +350,79 @@ h1 {
     100% {
         transform: translate(-50%, -50%) rotate(-113deg);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.peacock-container {
+    margin: 20px auto;
+    width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.peacock-image {
+    max-width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid #3f3f3f;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.peacock-image:hover {
+    border: 1px solid #3f3f3f;
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 22px;
+    max-width: 264px;
+    min-width: 264px;
+}
+
+.image-container:before {
+    font-family: 'FontAwesome';
+    content: '\f101';
+    color: #f65ea5;
+    font-size: 1.6em;
+    margin-top: 40%;
+    margin-right: 6px;
+}
+
+.image-container:after {
+    font-family: 'FontAwesome';
+    content: '\f100';
+    color: #f65ea5;
+    font-size: 1.6em;
+    margin-top: 40%;
+    margin-left: 6px;
 }
 
