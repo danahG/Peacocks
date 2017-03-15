@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
-<form>
+<header class="gallery-header">
+    <a href="../index-navigation.html" class="back-to-nav-button" id="welcome"> обратно към навигацията </a>
+</header>
 
-</form>
+    <form class="contact-form">
+        <div>Здравей Дана,</div>
+        <div>
+            <label>Казвам се</label>
+            <input type="text" name="your-name" minlength="3" placeholder="(името ти)" required>, </div>
+
+        <div>
+            <label>е-мейлът ми</label> е
+            <input type="email" placeholder="(е-мейлът ти)" required>
+        </div>
+
+        <div> Имам
+            <label>съобщение</label> за теб:</div>
+
+        <div>
+            <textarea placeholder="(напиши ми нещо)" class="expanding" rows="10" required></textarea>
+        </div>
+
+        <div class="container-button">
+            <button type="submit" class="submit-button">
+                изпрати
+            </button>
+        </div>
+    </form>
+
 
 </body>
 </html>
