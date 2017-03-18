@@ -40,3 +40,7 @@ function toggleSeeMoreThree() {
     }
 }
 
+function toggleLike() {
+    document.getElementById("like-button").classList.toggle("liked-button")
+
+}
