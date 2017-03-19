@@ -353,6 +353,17 @@ h1 {
 
 /*index-navigation positioning the feathers*/
 
+.feather-static {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    transition: 2s;
+    pointer-events: none;
+}
+
 h1 > a {
     text-decoration: none;
     color: #333333;
@@ -369,27 +380,27 @@ h1 > a {
 
 .feather-navigation-one {
     top: 376px;
-    left: 1334px;
+    left: 1344px;
 }
 
 .feather-navigation-two {
     top: 276px;
-    left: 1386px;
+    left: 1396px;
 }
 
 .feather-navigation-three {
     top: 176px;
-    left: 1334px;
+    left: 1344px;
 }
 
 .feather-navigation-four {
     top: 76px;
-    left: 1386px;
+    left: 1396px;
 }
 
 .feather-navigation-five {
     top: -36px;
-    left: 1334px;
+    left: 1344px;
 }
 
 .container-left {
@@ -399,44 +410,28 @@ h1 > a {
 
 .feather-navigation-six {
     top: 376px;
-    left: -64px;
+    left: -54px;
 }
 
 .feather-navigation-seven {
     top: 276px;
-    left: -120px;
+    left: -110px;
 }
 
 .feather-navigation-eight {
     top: 176px;
-    left: -64px;
+    left: -54px;
 }
 
 .feather-navigation-nine {
     top: 76px;
-    left: -120px;
+    left: -110px;
 }
 
 .feather-navigation-ten {
     top: -36px;
-    left: -64px;
+    left: -54px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Long posts page here: */
 
@@ -470,6 +465,14 @@ h1 > a {
     font-weight: 300;
 }
 
+.toggle-content {
+    display: none;
+}
+
+.article-more .toggle-content {
+    display: block;
+}
+
 .date-formatting {
     text-align: left;
     font-size: 0.8em;
@@ -493,7 +496,7 @@ h1 > a {
 }
 
 .line {
-    height: 150%;
+    height: 1300px;
     width: 1px;
     border-left: 1px dashed #f65ea5;
     position: absolute;
@@ -507,36 +510,27 @@ h1 > a {
     display: block;
     width: 36px;
     height: 36px;
-    line-height: 36px;
+    line-height: 42px;
     border-radius: 36px;
     border: 1px solid #f65ea5;
-    margin: 0 auto;
+    margin: 15px auto 0px auto;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
+    transition: 0.35s;
 }
 
 .see-more:hover {
     color: #f65ea5;
 }
 
+.article-more .see-more {
+    transform: rotate(180deg);
+}
+
 .fa-angle-double-down, .fa-angle-double-up {
     font-size: 1.4em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* short posts here*/
 
@@ -579,7 +573,7 @@ h1 > a {
 }
 
 .line-shorts {
-    height: 150%;
+    height: 1620px;
     width: 1px;
     border-left: 2px dotted #333333;
     position: absolute;
@@ -596,7 +590,7 @@ h1 > a {
     line-height: 36px;
     border-radius: 36px;
     border: 1px solid #e2e2e2;
-    margin: 0 auto;
+    margin: 15px auto 0 auto;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -605,25 +599,15 @@ h1 > a {
     transition: 0.3s;
 }
 
-.liked-button {
+.liked-button .like-button {
     color: #f65ea5;
     border-color: #f65ea5;
     transition: 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*gallery part*/
 
-.gallery-header {
+.header-pages {
     text-align: center;
 }
 
@@ -720,29 +704,11 @@ h1 > a {
     margin-top: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*design contact form*/
 
 .contact-form {
     background: #ffffff;
-    height: 500px;
+    height: 550px;
     width: 500px;
     border-radius: 50px;
     border: 1px solid #3f3f3f;
@@ -758,6 +724,10 @@ h1 > a {
 
 .contact-form > div {
     margin: 10px auto;
+}
+
+.contact-form > div.container-button {
+    margin-top: 0;
 }
 
 input {
@@ -806,8 +776,8 @@ input:focus {
 }
 
 textarea {
-    max-width: 400px;
-    min-width: 400px;
+    width: 80%;
+    margin-bottom: 10px;
     border-radius: 15px;
     border: 1px solid #f65ea5;
     font-weight: 300;
@@ -821,6 +791,25 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+.container-button {
+    text-align: center;
+}
+
+.success-msg {
+    margin: 0 auto 10px auto;
+    font-size: 0.875em;
+    max-width: 80%;
+    background-color: MEDIUMTURQUOISE;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+}
+
+.article-more .success-msg {
+    display: block;
 }
 
 .submit-button {
@@ -838,4 +827,119 @@ textarea:focus {
 .submit-button:hover {
     border: 1px solid #3f3f3f;
     color: #f65ea5;
+}
+
+
+
+/* media queries - 1600px, 1024px, 960px, 768px, 640px, 480px, 320px. */
+
+
+@media (max-width: 1365px) {
+    .container-right,
+    .container-left,
+    .feather-animation {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px){
+    .home {
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 640px) and (max-width: 768px){
+    .home {
+        width: 60%;
+    }
+
+    p.date-formatting,
+    p.date-formatting-shorts {
+        position: static;
+        display: inline-block;
+    }
+
+    p.date-formatting {
+        margin-top: 0;
+    }
+
+    p.date-formatting-shorts {
+        margin-bottom: 0;
+    }
+
+    .line,
+    .line-shorts {
+        display: none;
+    }
+
+    header.blogpost-title {
+        text-align: left;
+    }
+}
+
+@media (max-width: 640px) {
+
+
+
+    .blogpost {
+        width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
+    p.date-formatting,
+    p.date-formatting-shorts {
+        position: static;
+        display: inline-block;
+    }
+
+    p.date-formatting {
+        margin-top: 0;
+    }
+
+    p.date-formatting-shorts {
+        margin-bottom: 0;
+    }
+
+    .line,
+    .line-shorts {
+        display: none;
+    }
+
+    header.blogpost-title {
+        text-align: left;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+@media (max-width: 480px){
+    .home {
+        width: 50%;
+    }
+
+    .short {
+        width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+
+    }
+
+    .image-container {
+        box-sizing: border-box;
+    }
+
+    label {
+        width: 100%;
+        display: block;
+        text-align: center
+    }
+
+    .contact-form {
+        height: 580px;
+    }
 }

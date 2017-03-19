@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Contact Form</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../main.js"></script>
 </head>
 <body>
 
-<header class="gallery-header">
+<header class="header-pages">
     <a href="../index-navigation.html" class="back-to-nav-button" id="welcome"> обратно към навигацията </a>
 </header>
 
@@ -18,19 +19,19 @@
             <input type="text" name="your-name" minlength="3" placeholder="(името ти)" required>, </div>
 
         <div>
-            <label>е-мейлът ми</label> е
+            <label>е-мейлът ми е</label>
             <input type="email" placeholder="(е-мейлът ти)" required>
         </div>
 
-        <div> Имам
-            <label>съобщение</label> за теб:</div>
-
         <div>
-            <textarea placeholder="(напиши ми нещо)" class="expanding" rows="10" required></textarea>
+            <label>Имам съобщение за теб:</label>
         </div>
 
+        <textarea placeholder="(напиши ми нещо)" class="expanding" rows="10" required></textarea>
+
         <div class="container-button">
-            <button type="submit" class="submit-button">
+            <p class="success-msg">Съобщението е изпратено! (всъщност не &mdash; това е статичен сайт и то не е изпратено)</p>
+            <button type="button" class="submit-button" onclick="toggleSeeMore(this)">
                 изпрати
             </button>
         </div>
