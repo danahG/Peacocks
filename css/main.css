@@ -833,6 +833,42 @@ textarea:focus {
 
 /* media queries - 1600px, 1024px, 960px, 768px, 640px, 480px, 320px. */
 
+@media (min-width: 1367px) and (max-width: 1601px) {
+
+    .feather-navigation-one {
+        top: 376px;
+        left: 1575px;
+    }
+
+    .feather-navigation-two {
+        top: 276px;
+        left: 1630px;
+    }
+
+    .feather-navigation-three {
+        top: 176px;
+        left: 1575px;
+    }
+
+    .feather-navigation-four {
+        top: 76px;
+        left: 1630px;
+    }
+
+    .feather-navigation-five {
+        top: -36px;
+        left: 1575px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .container-right,
+    .container-left,
+    .feather-animation {
+        display: none;
+    }
+}
+
 
 @media (max-width: 1365px) {
     .container-right,
