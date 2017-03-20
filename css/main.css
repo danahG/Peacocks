@@ -32,9 +32,8 @@ h1 {
 
 .home-item {
     margin: 10px auto;
-    max-width: 160px;
-    min-width: 160px;
-    padding: 30% auto;
+    max-width: 159px;
+    min-width: 159px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,6 +50,7 @@ h1 {
     box-shadow: 8px 8px 10px #ececec;
     text-decoration: none;
     color: #333333;
+    flex-direction: column;
 }
 
 .home div {
@@ -349,6 +349,18 @@ h1 {
     100% {
         transform: translate(-50%, -50%) rotate(-113deg);
     }
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f65ea5;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /*index-navigation positioning the feathers*/
@@ -750,27 +762,43 @@ input:focus {
     font-weight: 300;
 }
 
-:-moz-placeholder {
+input:-moz-placeholder {
     /* Firefox 18- */
-
     text-align: center;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(246, 94, 165, 0.4);
     font-style: italic;
     font-weight: 400;
 }
 
-::-moz-placeholder {
+input::-moz-placeholder {
     /* Firefox 19+ */
-
     text-align: center;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(246, 94, 165, 0.4);
     font-style: italic;
     font-weight: 400;
+}
+
+textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+    color: rgba(246, 94, 165, 0.4);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+textarea:-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+    color: rgba(246, 94, 165, 0.4);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.1em;
 }
 
 :-ms-input-placeholder {
     text-align: center;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(246, 94, 165, 0.4);
     font-style: italic;
     font-weight: 400;
 }
@@ -829,8 +857,6 @@ textarea:focus {
     color: #f65ea5;
 }
 
-
-
 /* media queries - 1600px, 1024px, 960px, 768px, 640px, 480px, 320px. */
 
 @media (min-width: 1367px) and (max-width: 1601px) {
@@ -869,7 +895,6 @@ textarea:focus {
     }
 }
 
-
 @media (max-width: 1365px) {
     .container-right,
     .container-left,
@@ -883,7 +908,6 @@ textarea:focus {
         width: 50%;
     }
 }
-
 
 @media (min-width: 640px) and (max-width: 768px){
     .home {
@@ -915,8 +939,6 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
-
-
 
     .blogpost {
         width: 100%;
@@ -951,8 +973,8 @@ textarea:focus {
         max-width: 100%;
         box-sizing: border-box;
     }
-
 }
+
 @media (max-width: 480px){
     .home {
         width: 50%;
@@ -979,3 +1001,6 @@ textarea:focus {
         height: 580px;
     }
 }
+
+
+/* little - 904 big - 990*/
