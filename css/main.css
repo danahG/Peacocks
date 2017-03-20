@@ -449,6 +449,7 @@ h1 > a {
 
 .container-blog {
     text-align: center;
+    position: relative;
 }
 
 .blogpost {
@@ -508,14 +509,15 @@ h1 > a {
 }
 
 .line {
-    height: 1300px;
+    height: 110%;
     width: 1px;
     border-left: 1px dashed #f65ea5;
     position: absolute;
     z-index: 20;
     left: 50%;
     margin-left: -325px;
-    top: 0;
+    top: -100px;
+    bottom: 0;
 }
 
 .see-more {
@@ -525,7 +527,7 @@ h1 > a {
     line-height: 42px;
     border-radius: 36px;
     border: 1px solid #f65ea5;
-    margin: 15px auto 0px auto;
+    margin: 15px auto 0 auto;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -861,6 +863,217 @@ textarea:focus {
 
 @media (min-width: 1367px) and (max-width: 1601px) {
 
+
+    .feather-one {
+        transform: translate(-50%, -50%) rotate(23deg);
+        animation: f1 1.8s;
+        transition: 2s;
+    }
+
+    .feathers-active .feather-one {
+        transform: translate(940px, -100px) rotate(-90deg);
+    }
+
+    @keyframes f1 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(23deg);
+        }
+    }
+
+    .feather-two {
+        transform: translate(-50%, -50%) rotate(45deg);
+        animation: f2 1.8s;
+        transition: 2s;
+    }
+
+    .feathers-active .feather-two {
+        transform: translate(990px, -200px) rotate(-90deg);
+    }
+
+    @keyframes f2 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+
+    .feather-three {
+        transform: translate(-50%, -50%) rotate(68deg);
+        animation: f3 1.8s;
+        transition: 2s;
+    }
+
+    .feathers-active .feather-three {
+        transform: translate(940px, -300px) rotate(-90deg);
+    }
+
+    @keyframes f3 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(68deg);
+        }
+    }
+
+    .feather-four {
+        transform: translate(-50%, -50%) rotate(90deg);
+        animation: f4 1.8s;
+        transition: 2s;
+    }
+
+    .feathers-active .feather-four {
+        transform: translate(990px, -400px) rotate(-90deg);
+    }
+
+    @keyframes f4 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+
+    .feather-five {
+        transform: translate(-50%, -50%) rotate(113deg);
+        animation: f5 1.8s;
+        transition: 2s;
+    }
+
+    .feathers-active .feather-five {
+        transform: translate(940px, -500px) rotate(-90deg)
+    }
+
+    @keyframes f5 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(113deg);
+        }
+    }
+
+    .feather-six {
+        transform: translate(-50%, -50%) rotate(0deg);
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .8s;
+    }
+
+    .feathers-active .feather-six {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s .8s, opacity .8s;
+    }
+
+    .feather-seven {
+        transform: translate(-50%, -50%) rotate(-23deg);
+        animation: f7 1.8s;
+        transition: 2s;
+    }
+
+    .feathers-active .feather-seven {
+        transform: translate(-1020px, -100px) rotate(90deg);
+    }
+
+    @keyframes f7 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(-23deg);
+        }
+    }
+
+    .feather-eight {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        animation: f8 1.8s;
+        transition: 2s;
+    }
+
+    .feathers-active .feather-eight {
+        transform: translate(-1070px, -200px) rotate(90deg);
+    }
+
+    @keyframes f8 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    .feather-nine {
+        transform: translate(-50%, -50%) rotate(-68deg);
+        animation: f9 1.8s;
+    }
+
+    .feathers-active .feather-nine {
+        transform: translate(-1020px, -300px) rotate(90deg);
+    }
+
+    @keyframes f9 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(-68deg);
+        }
+    }
+
+    .feather-ten {
+        transform: translate(-50%, -50%) rotate(-90deg);
+        animation: f10 1.8s;
+    }
+
+    .feathers-active .feather-ten {
+        transform: translate(-1070px, -400px) rotate(90deg);
+    }
+
+    @keyframes f10 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(-90deg);
+        }
+    }
+
+    .feather-eleven {
+        transform: translate(-50%, -50%) rotate(-113deg);
+        animation: f11 1.8s;
+    }
+
+    .feathers-active .feather-eleven {
+        transform: translate(-1020px, -500px) rotate(90deg);
+    }
+
+    @keyframes f11 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(-113deg);
+        }
+    }
+
     .feather-navigation-one {
         top: 376px;
         left: 1575px;
@@ -1001,6 +1214,3 @@ textarea:focus {
         height: 580px;
     }
 }
-
-
-/* little - 904 big - 990*/
